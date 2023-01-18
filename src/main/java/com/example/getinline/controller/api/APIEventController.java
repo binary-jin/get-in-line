@@ -1,6 +1,7 @@
 package com.example.getinline.controller.api;
 
 import com.example.getinline.constant.ErrorCode;
+import com.example.getinline.dto.APIDataResponse;
 import com.example.getinline.dto.APIErrorResponse;
 import com.example.getinline.exception.GeneralException;
 import org.springframework.http.HttpStatus;
@@ -16,8 +17,7 @@ public class APIEventController {
 
     @GetMapping("/events")
     public List<String> getEvents() throws Exception{
-        throw new HttpRequestMethodNotSupportedException("스프링 에러 테스트");
-        //return List.of("event1","event2");
+        return List.of("event1","event2");
     }
 
     @PostMapping ("/events")
